@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow, noimageindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniil Gorodetckiy</title>
+    <title>testpage</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         body {
@@ -34,14 +34,14 @@
         }
 
         .avatar-name {
-            /* border: 1px solid black; */
+            border: 1px solid black;
             line-height: 1;
             font-weight: 650;
             font-size: 2.5vh;
         }
 
         .avatar-image {
-            /* border: 1px solid black; */
+            border: 1px solid black;
             height: 17vh;
             width: 17vh;
             border-radius: 50%;
@@ -52,17 +52,17 @@
             background-color: #222222;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(30vh, 1fr));
-            gap: 0.4vh;
-            padding: 0.4vh;
+            gap: 5px;
+            padding: 5px;
         }
 
         .box {
+            /* background-color: #4CAF50; */
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
             color: white;
             text-align: center;
-            border-radius: 2%;
+            border-radius: 5px;
             overflow: visible;
             aspect-ratio: 1;
             width: 100%;
@@ -78,7 +78,7 @@
             left: 0px;
             right: 0px;
             bottom: 0px;
-            border-radius: 2%;
+            border-radius: 5px;
             background: rgba(0, 0, 0, 0);
             box-shadow: inset 0 0 10px rgba(0, 0, 0, 0);
         }
@@ -112,54 +112,63 @@
             left: -1px;
             right: -1px;
             bottom: -1px;
-            border-radius: 2%;
+            border-radius: 5px;
             border: 2px solid rgba(34, 34, 34, 0);
         }
 
         .box:hover .border-overlay {
             border-color: rgba(34, 34, 34, 1);
         }
+
+        .container-rows {
+            background-color: #222222;
+            display: grid;
+            grid-template-columns: minmax(200px, 80%) minmax(100px, 20%);
+            grid-auto-flow: column;
+            height: 100%;
+        }
+        .left-section {
+            background-color: #24af18;
+        }
+
+        .right-section {
+            background-color: #648dc4;
+        }
+
     </style>
 </head>
 <body>
 
-<div class="container">
-    <!-- Верхняя часть с фоном и аватаркой -->
+<div class="container-rows">
+    <div class="left-section"></div>
+    <div class="right-section"></div>
+</div>
+
+<!-- <div class="container">
     <div class="top-section">
         <img src="SenkoHDAv.png" alt="Daybreak" class="avatar-image">
         <div class="avatar-name">Daniil Gorodetckiy</div>
         <div class="avatar-name" style="font-size: 2vh; font-weight: 550;">Rigger / Unity VR programmer</div>
     </div>
 
-    <!-- Нижняя часть с блоками -->
     <div class="bottom-section">
-        <a href="works/testpage.html">
-            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1xCa8ufIa78px_fNMw_P4qSFrMA0QZwQ1&sz=w1000');">
-                <span class="border-overlay"></span>
-            </div>
-        </a>
-        <a href="works/testpage.html">
-            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1hiEYZIfkKdGjHnMXpGI7x9um4029eK7x&sz=w1000');">
-                <span class="border-overlay"></span>
-            </div>
-        </a>
-        <a href="works/testpage.html">
-            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1rAcKpK1cgA95Efatg46htduIP1VvRHnv&sz=w1000');">
-                <span class="border-overlay"></span>
-            </div>
-        </a>
-        <a href="works/testpage.html">
-            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=18HJrlJT3ZPS2ug2O_VbX7QsOKgLKzZEl&sz=w1000');">
-                <span class="border-overlay"></span>
-            </div>
-        </a>
-        <a href="works/testpage.html">
-            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1teF2NG4rGSqhsPxYgnnO0frrG_UHUmhP&sz=w1000');">
-                <span class="border-overlay"></span>
-            </div>
-        </a>
+        <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1xCa8ufIa78px_fNMw_P4qSFrMA0QZwQ1&sz=w1000');">
+            <span class="border-overlay"></span>
+        </div>
+        <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1hiEYZIfkKdGjHnMXpGI7x9um4029eK7x&sz=w1000');">
+            <span class="border-overlay"></span>
+        </div>
+        <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1rAcKpK1cgA95Efatg46htduIP1VvRHnv&sz=w1000');">
+            <span class="border-overlay"></span>
+        </div>
+        <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=18HJrlJT3ZPS2ug2O_VbX7QsOKgLKzZEl&sz=w1000');">
+            <span class="border-overlay"></span>
+        </div>
+        <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1teF2NG4rGSqhsPxYgnnO0frrG_UHUmhP&sz=w1000');">
+            <span class="border-overlay"></span>
+        </div>
     </div>
-</div>
+</div> -->
 
 </body>
 </html>
