@@ -3,10 +3,12 @@
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow, noimageindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../content/icons/ArtStation.svg">
     <title>testpage</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         body {
+            background-color: #222222;
             margin: 0;
             font-family: "Montserrat", sans-serif;
         }
@@ -122,53 +124,137 @@
 
         .container-rows {
             background-color: #222222;
-            display: grid;
-            grid-template-columns: minmax(200px, 80%) minmax(100px, 20%);
-            grid-auto-flow: column;
-            height: 100%;
+            min-height: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
         }
+
         .left-section {
-            background-color: #24af18;
+            /* background-color: #24af18; */
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-shrink: 1;
+            justify-content: start;
+            align-items: center;
+            gap: 3vh;
+            padding: 3vh;
         }
 
         .right-section {
             background-color: #648dc4;
+            width: 40vh;
+            display: flex;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: start;
+            padding: 1vh;
         }
 
+        @media (max-width: 120vh) {
+            .container-rows {
+                flex-direction: column;
+            }
+
+            .right-section {
+                width: 100%;
+                min-height: 20vh;
+                order: -1;
+            }
+        }
+
+        .box-left {
+            width: 70%;
+            max-width: 100vh;
+            height: 300px;
+            border: 2px solid black;
+        }
+
+        .image-box {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .left-section a {
+            width: 70%;
+            max-width: 100vh;
+            height: fit-content;
+        }
+
+        .text-box {
+            border: 1px solid black;
+            width: 60%;
+            max-width: 90vh;
+            line-height: 1.2;
+            font-weight: 450;
+            font-size: 2vh;
+            text-align: center;
+            color: white;
+            padding-bottom: 3vh;
+        }
+
+        .video-box {
+            width: 70%;
+            max-width: 100vh;
+            aspect-ratio: 5/4;
+        }
+
+        .video-box iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+        }
+
+        .box-right {
+            background-color: #444444;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            border-radius: 1.5vh;
+            /* margin: 1vh; */
+            gap: 1vh;
+            padding: 1vh;
+        }
+
+        .base-info {
+            border: 1px solid black;
+            width: 100%;
+            height: 20vh;
+            /* margin: 1vh; */
+        }
     </style>
 </head>
 <body>
 
 <div class="container-rows">
-    <div class="left-section"></div>
-    <div class="right-section"></div>
+    <div class="left-section">
+        <div class="box-left"></div>
+        <a href="https://drive.google.com/uc?id=1xCa8ufIa78px_fNMw_P4qSFrMA0QZwQ1" target="_blank">
+            <img class="image-box" src="https://drive.google.com/thumbnail?id=1xCa8ufIa78px_fNMw_P4qSFrMA0QZwQ1&sz=w2000"></img>
+        </a>
+        <div class="text-box">Описание элемента</div>
+        <div class="video-box">
+            <iframe src="https://drive.google.com/file/d/1R0ygwvXH0sM_oyiKgkY7LjcisWjE9Owy/preview" allow="autoplay" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="video-box">
+            <iframe src="https://1drv.ms/v/c/83b01c1749efdebe/IQRWRTGwQsb9TbkfX2O6P0VYAfWlzC2c54WeUImCBbEO6Nk" width="1280" height="1024" allow="autoplay" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div> -->
+        <div class="box-left"></div>
+        <div class="box-left"></div>
+    </div>
+    <div class="right-section">
+        <div class="box-right">
+            <div class="base-info"></div>
+            <div class="base-info"></div>
+            <div class="base-info"></div>
+        </div>
+    </div>
 </div>
-
-<!-- <div class="container">
-    <div class="top-section">
-        <img src="SenkoHDAv.png" alt="Daybreak" class="avatar-image">
-        <div class="avatar-name">Daniil Gorodetckiy</div>
-        <div class="avatar-name" style="font-size: 2vh; font-weight: 550;">Rigger / Unity VR programmer</div>
-    </div>
-
-    <div class="bottom-section">
-        <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1xCa8ufIa78px_fNMw_P4qSFrMA0QZwQ1&sz=w1000');">
-            <span class="border-overlay"></span>
-        </div>
-        <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1hiEYZIfkKdGjHnMXpGI7x9um4029eK7x&sz=w1000');">
-            <span class="border-overlay"></span>
-        </div>
-        <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1rAcKpK1cgA95Efatg46htduIP1VvRHnv&sz=w1000');">
-            <span class="border-overlay"></span>
-        </div>
-        <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=18HJrlJT3ZPS2ug2O_VbX7QsOKgLKzZEl&sz=w1000');">
-            <span class="border-overlay"></span>
-        </div>
-        <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1teF2NG4rGSqhsPxYgnnO0frrG_UHUmhP&sz=w1000');">
-            <span class="border-overlay"></span>
-        </div>
-    </div>
-</div> -->
-
 </body>
 </html>

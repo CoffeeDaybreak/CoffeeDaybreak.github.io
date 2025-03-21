@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 86.629997 97.84"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Unity clear.svg"
+   width="86.629997"
+   height="97.839996"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs5" />
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="1.6691729"
+     inkscape:cx="177.03378"
+     inkscape:cy="12.880631"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <title
+     id="title1">Unity logo</title>
+  <path
+     d="M 86.63,68.49 V 22.83 L 47.09,0 v 17.53 l 15.49,9 c 0.61,0.41 0.61,1.22 0,1.43 l -18.34,10.6 a 1.55,1.55 0 0 1 -1.63,0 L 24.26,27.92 a 0.78,0.78 0 0 1 0,-1.43 l 15.49,-9 V 0 L 0,22.83 V 68.49 L 15.08,59.73 V 41.79 a 1,1 0 0 1 1.22,-0.82 l 18.34,10.6 A 1.54,1.54 0 0 1 35.46,53 v 21.2 a 1,1 0 0 1 -1.22,0.82 l -15.49,-9 -15.08,8.76 39.54,23 39.54,-22.83 -15.08,-8.76 -15.49,9 c -0.61,0.41 -1.22,0 -1.22,-0.82 v -21.2 a 1.72,1.72 0 0 1 0.82,-1.43 l 18.34,-10.6 c 0.61,-0.41 1.22,0 1.22,0.82 v 17.96 z"
+     style="fill:#4c4c4c"
+     id="path2" />
+  <path
+     d="m 43.21,97.84 39.54,-22.83 -15.08,-8.76 -15.49,9 c -0.61,0.41 -1.22,0 -1.22,-0.82 V 53.23 A 1.72,1.72 0 0 1 51.78,51.8 L 70.12,41.2 c 0.61,-0.41 1.22,0 1.22,0.82 v 17.9 l 15.08,8.76 V 22.83 L 43.21,47.92 Z"
+     id="path3" />
+  <path
+     d="m 47.09,0 v 17.53 l 15.49,9 c 0.61,0.41 0.61,1.22 0,1.43 l -18.34,10.6 a 1.55,1.55 0 0 1 -1.63,0 L 24.26,27.92 a 0.78,0.78 0 0 1 0,-1.43 l 15.49,-9 V 0 L 0,22.83 43.21,47.92 86.42,22.85 Z"
+     style="fill:#808080"
+     id="path4" />
+  <path
+     d="M 34.45,75.21 18.96,66.21 3.88,74.97 43.42,97.8 V 47.92 L 0,22.83 V 68.49 L 15.08,59.73 V 41.79 a 1,1 0 0 1 1.22,-0.82 l 18.34,10.6 A 1.54,1.54 0 0 1 35.46,53 v 21.2 c 0.21,0.81 -0.4,1.42 -1.01,1.01 z"
+     style="fill:#4c4c4c"
+     id="path5" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Unity logo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
