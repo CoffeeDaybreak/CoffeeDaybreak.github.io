@@ -14,116 +14,7 @@
         }
 
         .container {
-            background-color: #222222;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-
-        .top-section {
-            height: 30vh;
-            flex-shrink: 0;
-            background-image: url('artwork.png');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            gap: 1vh;
-        }
-
-        .avatar-name {
-            border: 1px solid black;
-            line-height: 1;
-            font-weight: 650;
-            font-size: 2.5vh;
-        }
-
-        .avatar-image {
-            border: 1px solid black;
-            height: 17vh;
-            width: 17vh;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .bottom-section {
-            background-color: #222222;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(30vh, 1fr));
-            gap: 5px;
-            padding: 5px;
-        }
-
-        .box {
-            /* background-color: #4CAF50; */
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            border-radius: 5px;
-            overflow: visible;
-            aspect-ratio: 1;
-            width: 100%;
-            height: auto;
-            position: relative;
-            transition: all 0.3 ease;
-        }
-
-        .box::before {
-            content: "";
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            right: 0px;
-            bottom: 0px;
-            border-radius: 5px;
-            background: rgba(0, 0, 0, 0);
-            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0);
-        }
-
-        .box:hover::before {
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
-            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
-        }
-
-        .box::after {
-            content: "Текст внутри блока";
-            width: 100%;
-            position: absolute;
-            bottom: 2vh;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 2vh;
-            font-weight: 550;
-            color: white;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .box:hover::after {
-            opacity: 1;
-        }
-
-        .box .border-overlay {
-            position: absolute;
-            top: -1px;
-            left: -1px;
-            right: -1px;
-            bottom: -1px;
-            border-radius: 5px;
-            border: 2px solid rgba(34, 34, 34, 0);
-        }
-
-        .box:hover .border-overlay {
-            border-color: rgba(34, 34, 34, 1);
-        }
-
-        .container-rows {
-            background-color: #222222;
+            background-color: #131313;
             min-height: 100%;
             height: fit-content;
             display: flex;
@@ -144,17 +35,22 @@
         }
 
         .right-section {
-            background-color: #648dc4;
-            width: 40vh;
+            /* background-color: #648dc4; */
+            width: 50vh;
             display: flex;
             flex-shrink: 0;
             justify-content: center;
             align-items: start;
+            box-sizing: border-box;
             padding: 1vh;
         }
 
+        .right-section a {
+            text-decoration: none;
+        }
+
         @media (max-width: 120vh) {
-            .container-rows {
+            .container {
                 flex-direction: column;
             }
 
@@ -211,28 +107,68 @@
         }
 
         .box-right {
-            background-color: #444444;
+            background-color: #222222;
             width: 100%;
             height: fit-content;
             display: flex;
             flex-direction: column;
             border-radius: 1.5vh;
-            /* margin: 1vh; */
-            gap: 1vh;
-            padding: 1vh;
+            position: sticky;
+            top: 1vh;
+            gap: 2vh;
+            padding: 2vh;
         }
 
         .base-info {
             border: 1px solid black;
             width: 100%;
-            height: 20vh;
-            /* margin: 1vh; */
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            gap: 1vh;
+            box-sizing: border-box;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .base-info:hover {
+            color: gray;
+            transition: all 0.3s;
+        }
+
+        .base-avatar {
+            border: 1px solid green;
+            border-radius: 50%;
+            height: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+
+        .base-name {
+            border: 1px solid green;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1vh;
+        }
+
+        .base-name p {
+            border: 1px solid black;
+            width: fit-content;
+            text-align: left;
+            font-size: 2.8vh;
+            font-weight: 650;
+            line-height: 1.4;
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
-<div class="container-rows">
+<div class="container">
     <div class="left-section">
         <div class="box-left"></div>
         <a href="https://drive.google.com/uc?id=1xCa8ufIa78px_fNMw_P4qSFrMA0QZwQ1" target="_blank">
@@ -242,19 +178,25 @@
         <div class="video-box">
             <iframe src="https://drive.google.com/file/d/1R0ygwvXH0sM_oyiKgkY7LjcisWjE9Owy/preview" allow="autoplay" allowfullscreen></iframe>
         </div>
-        <!-- <div class="video-box">
-            <iframe src="https://1drv.ms/v/c/83b01c1749efdebe/IQRWRTGwQsb9TbkfX2O6P0VYAfWlzC2c54WeUImCBbEO6Nk" width="1280" height="1024" allow="autoplay" frameborder="0" scrolling="no" allowfullscreen></iframe>
-        </div> -->
         <div class="box-left"></div>
         <div class="box-left"></div>
     </div>
     <div class="right-section">
         <div class="box-right">
-            <div class="base-info"></div>
+            <a href="../index.html">
+                <div class="base-info">
+                    <img src="../content/SenkoHDAv.png" class="base-avatar">
+                    <div class="base-name">
+                        <p>Daniil Gorodetckiy</p>
+                        <p style="font-weight: 550; font-size: 2vh;">Rigger<br>Technical physics artist</p>
+                    </div>
+                </div>
+            </a>
             <div class="base-info"></div>
             <div class="base-info"></div>
         </div>
     </div>
 </div>
+
 </body>
 </html>
