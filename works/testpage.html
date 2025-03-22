@@ -117,6 +117,7 @@
             top: 1vh;
             gap: 2vh;
             padding: 2vh;
+            color: white;
         }
 
         .base-info {
@@ -164,6 +165,38 @@
             line-height: 1.4;
             margin: 0;
         }
+
+        .description-text {
+            border: 1px solid black;
+            width: 100%;
+            text-align: left;
+            text-indent: 4vh;
+            font-size: 2.8vh;
+            font-weight: 550;
+            line-height: 1.2;
+            padding-top: 2vh;
+            margin: 0;
+        }
+
+        .sofware-box {
+            border: 1px solid black;
+            width: 100%;
+            height: 20vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:flex-start;
+            align-items:flex-start;
+            align-content: flex-start;
+            gap: 1vh;
+        }
+
+        .sofware-cell {
+            background-color: white;
+            border-radius: 1vh;
+            width: 31%;
+            height: 40px;
+        }
     </style>
 </head>
 <body>
@@ -192,8 +225,17 @@
                     </div>
                 </div>
             </a>
-            <div class="base-info"></div>
-            <div class="base-info"></div>
+            <p class="description-text">Marine fuel filter Marine fuel filter Marine fuel filter Marine fuel filter</p>
+            <p class="description-text" style="font-size: 2vh; font-weight: 450; padding-top: 0vh;">Marine fuel filter Marine fuel filter Marine fuel filter Marine fuel filter</p>
+            <p class="description-text">Sofware used</p>
+            <div class="sofware-box">
+                <div class="sofware-cell"></div>
+                <div class="sofware-cell"></div>
+                <div class="sofware-cell"></div>
+                <div class="sofware-cell"></div>
+                <div class="sofware-cell"></div>
+                <div class="sofware-cell"></div>
+            </div>
         </div>
     </div>
 </div>
