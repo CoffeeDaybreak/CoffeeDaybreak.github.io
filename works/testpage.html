@@ -49,18 +49,6 @@
             text-decoration: none;
         }
 
-        @media (max-width: 120vh) {
-            .container {
-                flex-direction: column;
-            }
-
-            .right-section {
-                width: 100%;
-                min-height: 20vh;
-                order: -1;
-            }
-        }
-
         .box-left {
             width: 70%;
             max-width: 100vh;
@@ -71,18 +59,18 @@
         .image-box {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             object-position: center center;
         }
 
         .left-section a {
             width: 70%;
             max-width: 100vh;
-            height: fit-content;
+            max-height: 89vh;
         }
 
         .text-box {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             width: 60%;
             max-width: 90vh;
             line-height: 1.2;
@@ -96,6 +84,7 @@
         .video-box {
             width: 70%;
             max-width: 100vh;
+            max-height: 89vh;
             aspect-ratio: 5/4;
         }
 
@@ -139,7 +128,7 @@
         }
 
         .base-avatar {
-            border: 1px solid green;
+            /* border: 1px solid green; */
             border-radius: 50%;
             height: 9vh;
             aspect-ratio: 1;
@@ -147,7 +136,7 @@
         }
 
         .base-name {
-            border: 1px solid green;
+            /* border: 1px solid green; */
             height: 100%;
             width: 100%;
             display: flex;
@@ -159,7 +148,7 @@
         }
 
         .base-name p {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             width: fit-content;
             text-align: left;
             font-size: 2.4vh;
@@ -169,10 +158,10 @@
         }
 
         .description-text {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             width: 100%;
             text-align: left;
-            text-indent: 4vh;
+            /* text-indent: 4vh; */
             font-size: 2.4vh;
             font-weight: 550;
             line-height: 1.2;
@@ -181,9 +170,9 @@
         }
 
         .sofware-box {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             width: 100%;
-            height: 20vh;
+            height: fit-content;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -195,9 +184,9 @@
 
         .sofware-cell {
             background-color: #444444;
-            border-radius: 1vh;
+            border-radius: 0.6vh;
             width: fit-content;
-            height: 35px;
+            height: 3.3vh;
             box-sizing: border-box;
             padding: 0.5vh;
         }
@@ -218,13 +207,41 @@
             height: 100%;
             padding-right: 0.5vh;
         }
+
+        .contacts {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            gap: 1vh;
+        }
+
+        @media (max-width: 120vh) {
+            .container {
+                flex-direction: column;
+            }
+
+            .box-right {
+                gap: 1vh;
+            }
+
+            .right-section {
+                width: 100%;
+                min-height: 20vh;
+                order: -1;
+            }
+
+            .description-text {
+                padding-top: 1vh;
+            }
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
     <div class="left-section">
-        <div class="box-left"></div>
         <a href="https://drive.google.com/uc?id=1xCa8ufIa78px_fNMw_P4qSFrMA0QZwQ1" target="_blank">
             <img class="image-box" src="https://drive.google.com/thumbnail?id=1xCa8ufIa78px_fNMw_P4qSFrMA0QZwQ1&sz=w2000"></img>
         </a>
@@ -232,6 +249,9 @@
         <div class="video-box">
             <iframe src="https://drive.google.com/file/d/1R0ygwvXH0sM_oyiKgkY7LjcisWjE9Owy/preview" allow="autoplay" allowfullscreen></iframe>
         </div>
+        <a href="https://drive.google.com/uc?id=1bujbnqRzOlN3N-vf1O3yk-DVZvVVG_OL" target="_blank">
+            <img class="image-box" src="https://drive.google.com/thumbnail?id=1bujbnqRzOlN3N-vf1O3yk-DVZvVVG_OL&sz=w2000"></img>
+        </a>
         <div class="box-left"></div>
         <div class="box-left"></div>
     </div>
@@ -246,8 +266,8 @@
                     </div>
                 </div>
             </a>
-            <p class="description-text">Marine fuel filter Marine fuel filter Marine fuel filter Marine fuel filter</p>
-            <p class="description-text" style="font-size: 1.9vh; font-weight: 450; padding-top: 0vh;">Marine fuel filter Marine fuel filter Marine fuel filter Marine fuel filter</p>
+            <p class="description-text">Marine fuel filter</p>
+            <p class="description-text" style="font-size: 1.9vh; font-weight: 450; padding-top: 0vh;">* This part is publicly available and the 3D model has been approved for portfolio publication</p>
             <p class="description-text">Sofware used</p>
             <div class="sofware-box">
                 <div class="sofware-cell">
@@ -255,11 +275,30 @@
                         <img class="sofware-icon" src="../content/icons/Autodesk 3ds Max.svg">3DS Max
                     </div>
                 </div>
-                <div class="sofware-cell"></div>
-                <div class="sofware-cell"></div>
-                <div class="sofware-cell"></div>
-                <div class="sofware-cell"></div>
-                <div class="sofware-cell"></div>
+                <div class="sofware-cell">
+                    <div class="sofware-content">
+                        <img class="sofware-icon" src="../content/icons/V-Ray clear.svg">V-Ray
+                    </div>
+                </div>
+                <div class="sofware-cell">
+                    <div class="sofware-content">
+                        <img class="sofware-icon" src="../content/icons/Adobe Photoshop.svg">Photoshop
+                    </div>
+                </div>
+                <div class="sofware-cell">
+                    <div class="sofware-content">
+                        <img class="sofware-icon" src="../content/icons/CorelDRAW clear.svg">CorelDRAW Graphics Suite
+                    </div>
+                </div>
+            </div>
+            <p class="description-text">Contacts</p>
+            <div class="contacts">
+                <div class="sofware-content">
+                    <img class="sofware-icon" style="height: 2vh;" src="../content/icons/Gmail.svg">: dannypipbuck@gmail.com
+                </div>
+                <div class="sofware-content">
+                    <img class="sofware-icon" style="height: 2vh;" src="../content/icons/Telegram.svg">: @PipBuck
+                </div>
             </div>
         </div>
     </div>
