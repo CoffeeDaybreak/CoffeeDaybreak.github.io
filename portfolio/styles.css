@@ -192,15 +192,6 @@ body {
     gap: 1vh;
 }
 
-.iframe-video {
-    width: 90%;
-    max-width: 150vh;
-    max-height: 89vh;
-    /* aspect-ratio: 5/4; */
-    border: none;
-    outline: none;
-}
-
 @media (max-width: 120vh) {
     .container {
         flex-direction: column;
