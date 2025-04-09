@@ -22,14 +22,14 @@
         .top-section {
             height: 30vh;
             flex-shrink: 0;
-            background-image: url('artwork.png');
+            background-image: url('TT_Back.png');
             background-size: cover;
             background-position: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: #e6e6e6;
             text-align: center;
             gap: 1vh;
         }
@@ -41,8 +41,8 @@
         }
 
         .avatar-image {
-            height: 17vh;
-            width: 17vh;
+            height: 15vh;
+            width: 15vh;
             border-radius: 50%;
             object-fit: cover;
         }
@@ -87,7 +87,7 @@
         }
 
         .box::after {
-            content: "Текст внутри блока";
+            content: attr(data-text);
             width: 100%;
             position: absolute;
             bottom: 2vh;
@@ -95,7 +95,7 @@
             transform: translateX(-50%);
             font-size: 2vh;
             font-weight: 550;
-            color: white;
+            color: #e6e6e6;
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -117,6 +117,52 @@
         .box:hover .border-overlay {
             border-color: rgba(19, 19, 19, 1);
         }
+
+        /* .box .sofware-overlay {
+            content: "";
+            display: inline;
+            width: 50%;
+            position: absolute;
+            top: 2vh;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2vh;
+            font-weight: 550;
+            color: #e6e6e6;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .box:hover .software-overlay {
+            opacity: 1;
+        } */
+
+        .sofware-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 1.5vh;
+            font-weight: 550;
+            line-height: 1;
+        }
+
+        .sofware-icon {
+            height: 100%;
+            padding-right: 0.5vh;
+        }
+
+        .contacts {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            gap: 0.5vh;
+        }
     </style>
 </head>
 <body>
@@ -124,35 +170,53 @@
 <div class="container">
     <!-- Верхняя часть с фоном и аватаркой -->
     <div class="top-section">
-        <img src="content/SenkoHDAv.png" class="avatar-image">
+        <img src="content/armored-core-6-avatar-light.png" class="avatar-image">
         <div class="avatar-name">Daniil Gorodetckiy</div>
         <div class="avatar-name" style="font-size: 2vh; font-weight: 550;">Rigger / Technical physics artist</div>
+        <div class="contacts">
+            <div class="sofware-content">
+                <img class="sofware-icon" style="height: 2vh;" src="content/icons/Gmail.svg">: dannypipbuck@gmail.com
+            </div>
+            <div class="sofware-content">
+                <img class="sofware-icon" style="height: 2vh;" src="content/icons/Telegram.svg">: @PipBuck
+            </div>
+        </div>
     </div>
 
-    <!-- Нижняя часть с блоками -->
     <div class="bottom-section">
-        <a href="portfolio/5-Pumpjack (Maya rigged).html">
-            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1xCa8ufIa78px_fNMw_P4qSFrMA0QZwQ1&sz=w1000');">
+        <a href="portfolio/6-Rigged_trophy_truck.html">
+            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1ca5XnJXT-ES3gxwhz2pIk-DuorBXgqsi&sz=w1000');" data-text="Rigged trophy truck">
+                <span class="border-overlay"></span>
+                <!-- <span class="software-overlay">
+                    <img class="sofware-icon" style="height: 2vh;" src="content/icons/Gmail.svg">
+                </span> -->
+            </div>
+        </a>
+        <a href="portfolio/5-Maya_Rigged_pumpjack.html">
+            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1xCa8ufIa78px_fNMw_P4qSFrMA0QZwQ1&sz=w1000');" data-text="Maya rigged pumpjack">
+                <span class="border-overlay"></span>
+                <!-- <span class="software-overlay">
+                    <img class="sofware-icon" style="height: 2vh;" src="content/icons/Gmail.svg">
+                </span> -->
+            </div>
+        </a>
+        <a href="portfolio/4-Marine_two-section_fuel_filter.html">
+            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1hiEYZIfkKdGjHnMXpGI7x9um4029eK7x&sz=w1000');" data-text="Marine two-section fuel filter">
                 <span class="border-overlay"></span>
             </div>
         </a>
-        <a href="portfolio/4-Marine two-section fuel filter.html">
-            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1hiEYZIfkKdGjHnMXpGI7x9um4029eK7x&sz=w1000');">
+        <a href="portfolio/3-Marine_manual_valve.html">
+            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1rAcKpK1cgA95Efatg46htduIP1VvRHnv&sz=w1000');" data-text="Marine manual valve">
                 <span class="border-overlay"></span>
             </div>
         </a>
-        <a href="portfolio/3-Marine manual valve.html">
-            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1rAcKpK1cgA95Efatg46htduIP1VvRHnv&sz=w1000');">
+        <a href="portfolio/2-Marine_fuel_filter.html">
+            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=18HJrlJT3ZPS2ug2O_VbX7QsOKgLKzZEl&sz=w1000');" data-text="Marine fuel filter">
                 <span class="border-overlay"></span>
             </div>
         </a>
-        <a href="portfolio/2-Marine fuel filter.html">
-            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=18HJrlJT3ZPS2ug2O_VbX7QsOKgLKzZEl&sz=w1000');">
-                <span class="border-overlay"></span>
-            </div>
-        </a>
-        <a href="portfolio/1-Marine fuel filter.html">
-            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1teF2NG4rGSqhsPxYgnnO0frrG_UHUmhP&sz=w1000');">
+        <a href="portfolio/1-Marine_fuel_filter.html">
+            <div class="box" style="background-image: url('https://drive.google.com/thumbnail?id=1teF2NG4rGSqhsPxYgnnO0frrG_UHUmhP&sz=w1000');" data-text="Marine fuel filter">
                 <span class="border-overlay"></span>
             </div>
         </a>
